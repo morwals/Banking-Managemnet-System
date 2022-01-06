@@ -1,0 +1,325 @@
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: white; 
+}
+
+.nav{
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    background-color: crimson;
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 40px; 
+box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
+}
+.nav h1{
+    margin: 0px;
+}
+
+/* index ejs */
+.hide{
+    font-family: "Arial Narrow";
+    margin: auto;
+    width: 22%;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-size: 12px;
+    color: rgb(26, 25, 25);
+    font-family: 'Trebuchet MS';
+}
+
+.cstmr,.trns{
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+    margin: auto 50px;
+    border-radius: 25px;
+    
+box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
+    font-size: 30px;
+    border: 3px solid black;
+}
+
+.cstmr:hover{
+    background-color: whitesmoke;
+    border: 3px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.trns:hover{
+    background-color: whitesmoke;
+    border: 3px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.main-ind{
+    margin-top: 140px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.footer{
+    position:fixed;
+    text-align: center;
+    bottom:0px;
+    height:40px;
+    width:100%;
+    background:rgb(233, 214, 214); 
+box-shadow: 4px -3px 15px -7px rgba(0,0,0,0.6);
+}
+
+/* customers ejs */
+
+.container-c{
+    text-align: center;
+    display: inline-flex;
+    width: fit-content;
+    margin: auto 110px ;
+
+}
+.h2-c{
+    display: inline;
+    
+    font-family: "Segoe UI";
+}
+
+.div-ac{
+    margin-left: 600px;
+    display: inline;
+    width: fit-content;
+    font-family: "Segoe UI";
+}
+
+
+
+.add-customer:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.table a{
+    text-decoration: none;
+}
+
+
+
+.table{
+    text-align: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 14px;
+    height: 390px;
+    overflow-y: auto;
+}
+
+table{
+    
+    border-spacing:0;
+    width:100%;
+    font-family:sans-serif;
+}
+thead{
+    color: whitesmoke;
+    background-color: rgb(19, 19, 22);
+}
+
+td,table th{
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+.row:hover{
+    background-color: rgb(37, 179, 179);
+    font-family:sans-serif;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+}
+
+
+.heading-cstmr h1{
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+
+.footer p{
+    font-family: "Arial";
+}
+
+/* add customer */
+
+.form-addc{
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* transactions */
+.btn-trns{
+    text-align: right;
+    margin-top: 10px;
+}
+#btn-his{
+    border: none;
+    padding: 7px;
+    height: fit-content;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(0, 68, 0);
+    font-family: Verdana;
+    background-color: palegreen;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+}
+
+#btn-his:hover{
+    color: palegreen;
+    background-color: rgb(0, 80, 0);
+}
+
+.trns-history .table{
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 700px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+}
+.trns-history p{
+    display: inline;
+    font-family: 'Trebuchet MS';
+    margin-left: 60px;
+}
+
+.trns-history .row:hover{
+    background-color: rgb(85, 72, 0);
+    font-family:sans-serif;
+    color: rgb(255, 239, 233);
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+}
+
+.make-tr {
+    text-align: center;
+    margin: 70px auto;  
+    width: fit-content;
+    
+}
+
+.make-tr a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.make-tr a{
+    text-decoration: none;
+    font-size: 150px;
+    font-family: sans-serif;
+}
+.make-tr-hide{
+    text-align: center;
+    font-family:Helvetica;
+    
+    color: rgba(0, 104, 202, 0.589);
+}
+
+/* pay ejs */
+
+.payh1{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.success{
+    text-align: center;
+    background-color: rgb(66, 231, 141);
+    font-family: "Cambria";
+    font-size: 20px;
+    color: rgb(0, 78, 0);
+}
+
+.sender{
+    padding: 70px 10px;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    margin: auto;
+}
+
+#btn{
+    display: block;
+    margin: 10px auto;
+    border: black;
+    height: 40px;
+    width: 80px;
+    font-size: 23px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+    background-color: white;
+    border: 1px solid rgb(94, 94, 94);
+}
+
+#btn:hover{
+    background-color: rgb(202, 199, 199);
+    border: none;
+    border-radius: 30px;   
+}
+
+.sender select,input{
+    height: 30px;
+    width: 180px;
+    margin: 9px 2px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+}
+
+.sender h2{
+    display: inline;
+}
+
+/* new customer */
+
+.form-addc{
+    width: fit-content;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+button{
+    margin: 10px auto;
+    border: black;
+    height: 40px;
+    width: 80px;
+    font-size: 13px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+    background-color: rgb(7, 139, 128);
+    border: 1px solid rgb(94, 94, 94);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(0, 112, 94);
+    border: none;  
+}
+
+.h1{
+    font-family:Verdana;
+    text-align: center;
+    color:rgb(60, 13, 78);
+    margin: 13px;
+}

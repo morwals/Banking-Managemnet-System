@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h1>Banking Management System <i class="fas fa-piggy-bank"></i></h1>
+        </div>
+    </nav>
+
+    <div class="container-c">
+        <div class="v h2-c">
+            <h2>All Customers</h2>
+        </div>
+        <div class="v div-ac">
+            <a href="/add-customers" class="add-customer"><h2>Create a New Customer <i class="fas fa-user"></i></h2></a>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Account Number</td>
+                    <td>Amount (Rs.)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% customers.forEach(function(customer){ %>
+                    <tr class="row">
+                        <td><%= customer.name %></td>
+                        <td><%= customer.account %></td>
+                        <td>Rs. <%= customer.amount %>/-</td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="js/logic.js"></script>
+            
+            <div class="footer">
+                <p><i class="far fa-copyright" style="user-select: auto;"></i> Sumit Morwal</p>
+            </div>
+            
+        </body>
+        </html>

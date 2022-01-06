@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h1>Banking Management System <i class="fas fa-piggy-bank"></i></h1>
+        </div>
+    </nav>
+    
+<div class="success">
+    <h2>Transaction Successfull</h2>
+</div>
+
+    <div class="payh1"> 
+        <h1>Make Transactions <i class="fas fa-money-check-alt"></i></h1>
+    </div>
+
+    <div class="sender">
+            <h2>Sender:</h2>
+            <select name="senders" id="senders">
+                <option value="0" id="a">Select Sender's Name</option>
+                <% customers.forEach(function(customer){ %>
+                    <option value="<%= customer.account %>"><%= customer.name %></option>
+                    <% }) %>
+                </select>
+                <br>
+                <h2>Reciever:</h2>
+                <select name="recievers" id="recievers">
+                    <option value="0" id="b">Select Reciever's Name</option>
+                    <% customers.forEach(function(customer){ %>
+                        <option value="<%= customer.account %>"><%= customer.name %></option>
+                        <% }) %>
+                    </select>
+                    <br>
+                    <h2>
+                        Amount to send:
+                    </h2> 
+                <input type="text"  name="amounttosend" id="inp" >
+                    
+                    <button type="submit" id="btn">send</button>
+                
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/logic.js"></script>
+    
+    <div class="footer">
+        <p><i class="far fa-copyright" style="user-select: auto;"></i> Sumit Morwal</p>
+    </div>
+
+</body>
+</html>

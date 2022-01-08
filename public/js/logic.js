@@ -51,7 +51,10 @@ $("#btn-his").click(function(){
             }
         });
 
-        $(".success").fadeIn(400);
+        $(".success").fadeIn(500);
+
+        $(".sender").fadeOut(100);
+        $(".payh1").fadeOut(100);
         
         
             $("#senders").val("0"); 

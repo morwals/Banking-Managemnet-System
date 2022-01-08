@@ -176,19 +176,24 @@ td,table th{
 #btn-his{
     border: none;
     padding: 7px;
+    margin-left: 15px;
     height: fit-content;
+    width: fit-content;
     border-radius: 30px;
     font-size: 14px;
     font-weight: bolder;
-    color: rgb(0, 68, 0);
+    border: 1px solid rgb(39, 39, 39);
+    
+    color: rgb(0, 0, 0);
+    background-color: white;
     font-family: Verdana;
-    background-color: palegreen;
-    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+    box-shadow:-2px 4px 10px -5px rgba(0,0,0,0.99);
 }
 
 #btn-his:hover{
-    color: palegreen;
-    background-color: rgb(0, 80, 0);
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: palegreen;
 }
 
 .trns-history .table{
@@ -246,7 +251,9 @@ td,table th{
     text-align: center;
     background-color: rgb(66, 231, 141);
     font-family: "Cambria";
-    font-size: 20px;
+    font-size: 40px;
+    padding: 2px;
+    margin-top: 30px;
     color: rgb(0, 78, 0);
 }
 
@@ -266,15 +273,16 @@ td,table th{
     width: 80px;
     font-size: 23px;
     border-radius: 10px;
-    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
     background-color: white;
     border: 1px solid rgb(94, 94, 94);
+    color: #000;
 }
 
 #btn:hover{
     background-color: rgb(202, 199, 199);
-    border: none;
-    border-radius: 30px;   
+    border: none; 
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+      
 }
 
 .sender select,input{
@@ -299,7 +307,7 @@ td,table th{
     text-align: left;
 }
 
-button{
+.form-addc button{
     margin: 10px auto;
     border: black;
     height: 40px;

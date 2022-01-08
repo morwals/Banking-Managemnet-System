@@ -3,7 +3,7 @@ $(".add-user").submit(function(event){
 });
 
 $(".trns-history").hide();
-$(".success").hide();
+// $(".success").hide();
 $(".make-t").hide();
 
 $("#btn-his").click(function(){

@@ -4,6 +4,11 @@ html,body{
     overflow-x: hidden;
     background: white; 
 }
+@media only screen and (max-width:720px){
+    html,body{
+       background-color: whitesmoke;
+    }
+}
 
 .nav{
     margin: auto;
@@ -17,6 +22,14 @@ box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
 }
 .nav h1{
     margin: 0px;
+}
+
+/* responsive */
+@media only screen and (max-width:789px){
+    .nav{
+        font-size: large;
+        background-color: rgb(14, 14, 88);
+    }
 }
 
 /* index ejs */
@@ -42,8 +55,7 @@ box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
     padding: 10px 10px;
     margin: auto 50px;
     border-radius: 25px;
-    
-box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
+    box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
     font-size: 30px;
     border: 3px solid black;
 }
@@ -69,6 +81,9 @@ box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
     padding: 30px 30px;
     text-align: center;
 }
+.cst,.trn{
+    display: inline;
+}
 
 .footer{
     position:fixed;
@@ -77,32 +92,65 @@ box-shadow: 5px 4px 15px -4px rgba(0,0,0,0.6);
     height:40px;
     width:100%;
     background:rgb(233, 214, 214); 
-box-shadow: 4px -3px 15px -7px rgba(0,0,0,0.6);
+    box-shadow: 4px -3px 15px -7px rgba(0,0,0,0.6);
 }
+
+/* responsive */
+@media only screen and (max-width:720px){
+    .cstmr,.trns{
+        font-size: 16px;
+        display: inline;
+        margin: 0%;
+        background-color: rgb(14, 9, 44);
+    }
+    .main-ind{
+        padding: 15px 0px;
+        margin-top: 30vh;
+        max-width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+    }
+    .hide{
+        font-size: 8px;
+        width: 90%;
+    }
+    .footer{
+        background:	#34568b;
+        color: white; 
+        height: fit-content;
+        padding: 0.1%;
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
+
 
 /* customers ejs */
 
 .container-c{
-    text-align: center;
-    display: inline-flex;
-    width: fit-content;
-    margin: auto 110px ;
-
+    width: 90%;
+    margin: auto ;
+    display: flex;
+    justify-content: space-between;
 }
 .h2-c{
-    display: inline;
-    
+    /* display: inline; */
     font-family: "Segoe UI";
 }
 
 .div-ac{
-    margin-left: 600px;
-    display: inline;
+    /* display: inline; */
     width: fit-content;
     font-family: "Segoe UI";
 }
 
-
+.add-customer{
+    text-decoration: none;
+}
 
 .add-customer:hover{
     color: blue;
@@ -161,6 +209,44 @@ td,table th{
     font-family: "Arial";
 }
 
+@media only screen and (max-width:720px){
+
+    .container-c{
+        width: 97%;
+        max-width: 100%;
+        margin: 1% 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .div-ac{
+        margin-left: 3px;
+        text-align: right;
+    }
+    .row:hover{
+        background-color: rgb(14, 20, 70);
+        font-family:sans-serif;
+        color: whitesmoke;
+        box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+    }
+    thead{
+        background-color: rgb(14, 9, 44);
+    }
+    .v{
+        font-size: 10px;
+    }
+    .h2-c{
+        text-align: left;
+        color: rgb(32, 32, 32);
+    }
+    .table{
+        width: 95%;
+        font-size: 14px;
+        background-color: whitesmoke;
+        height: fit-content;
+    }
+
+}
+
 /* add customer */
 
 .form-addc{
@@ -199,7 +285,7 @@ td,table th{
 .trns-history .table{
     background-color: rgba(255, 255, 255, 0.459);
     width: 700px;
-    height: 300px;
+    height: fit-content;
     border-radius: 5px;
     display: flex;
 }
@@ -209,12 +295,12 @@ td,table th{
     margin-left: 60px;
 }
 
-.trns-history .row:hover{
+/* .trns-history .row:hover{
     background-color: rgb(85, 72, 0);
     font-family:sans-serif;
     color: rgb(255, 239, 233);
     box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
-}
+} */
 
 .make-tr {
     text-align: center;
@@ -240,6 +326,27 @@ td,table th{
     color: rgba(0, 104, 202, 0.589);
 }
 
+
+@media only screen and (max-width:720px){
+
+    #btn-his{
+        font-size: 10px;
+        background-color: rgb(247, 244, 244);
+    }
+    .make-tr-hide{
+        font-size: 15px;
+    }
+     .trns-history .table{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 0%;
+     }
+     .trns-history table{
+         font-size: 15px;
+     }
+
+}
+
 /* pay ejs */
 
 .payh1{
@@ -255,6 +362,7 @@ td,table th{
     padding: 2px;
     margin-top: 30px;
     color: rgb(0, 78, 0);
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
 }
 
 .sender{
@@ -298,6 +406,26 @@ td,table th{
     display: inline;
 }
 
+/* responsive */
+@media only screen and (max-width:789px){
+    .payh1{
+        text-align: left;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .sender{
+        margin-top: 1px;
+        max-width: 100%;
+        width: fit-content;
+        height: fit-content;
+    }
+    .success{
+        font-size: 30px;
+        
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.66);
+    }
+}
+
 /* new customer */
 
 .form-addc{
@@ -330,4 +458,14 @@ button:hover{
     text-align: center;
     color:rgb(60, 13, 78);
     margin: 13px;
+}
+
+/* responsive */
+@media only screen and (max-width:789px){
+    .h1{
+        font-size: 10px;
+    }
+    .form-addc{
+        margin-top: 2px;
+    }
 }

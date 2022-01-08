@@ -285,7 +285,7 @@ td,table th{
 .trns-history .table{
     background-color: rgba(255, 255, 255, 0.459);
     width: 700px;
-    height: fit-content;
+    height: 60%;
     border-radius: 5px;
     display: flex;
 }
